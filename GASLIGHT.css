@@ -24,32 +24,10 @@ h1{
 	color: white;
 }
 
-ul{
-	color: white;
-	list-style-type: none;
-	margin: .5em;
-	padding: 0;
-	background-color: lightblue;
-	text-align: center;
-	font-family: 'capture_itregular', 'Helvetica', 'Arial';
-	font-size: 20px;
+#slideshow{width:1400px; height:700px; overflow:hidden; position:relative;}
 
-}
+#slideshow li{width:960px; height:350px; float:left; display:inline;}
 
-li{
-	color: white;
-	font-family: 'capture_itregular', 'Helvetica', 'Arial';
-	display: inline-block;
-	text-align: left;
-	width: 15%;
-	padding: .5em;
-	margin: 1em;
-}
-
-#picid{
-	margin: 1em;
-	padding: 1em;
-}
 
 
 .dropdown-content{

@@ -3,47 +3,38 @@
 
 alert('hi!');
 
-var picList = new Array(3);
-
-var fButtonListener;
-var bButtonListener;
-
-var whichPic;
-
-//this is the pic
-	picList[0] = "images/pic1.jpg";
-	picList[1] = "images/pic2.jpg";
-	picList[2] = "images/pic3.jpg";
 
 
 
-window.onload = function(){
-	
-	whichPic=0;
-	document.getElementById('picid').src=picList[0];
+//TRYING OUT THE SLIDESHOW
 
-	fButtonListener = document.getElementById("forwards");
-	bButtonListener = document.getElementById("backwards");
+   //This keeps track of the slideshow's current location
+   var current_panel = 1;
+    //Controlling the duration of animation by variable will simplify changes
+    var animation_duration = 2500;
+    
+    $.timer(6000, function (timer) {
+        //Determine the current location, and transition to next panel
+        switch(current_panel){
+        	case 1:
+        	$("#slideshow").stop().animate({left: "-960px", top: "0px"}, {easing: 'easeOutBack', duration: animation_duration});
+        	current_panel = 2;
+        	break;
+        	case 2:
+        	$("#slideshow").stop().animate({left: "0px", top: "-350px"}, {easing: 'easeOutBack', duration: animation_duration});
+        	current_panel = 3;
+        	break;
+        	case 3:
+        	$("#slideshow").stop().animate({left: "-960px", top: "-350px"}, {easing: 'easeOutBack', duration: animation_duration});
+        	current_panel = 1;
+        	break;
 
-	fButtonListener.addEventListener('click', function(event){
-		++whichPic;
-		if (whichPic>= picList.length){
-			whichPic=0;
-		};
-		document.getElementById('picid').src=picList[whichPic];
-
-	});
-
-	bButtonListener.addEventListener('click', function(event){
-		whichPic=whichPic-1;
-		if (whichPic<0) {
-			whichPic=picList.length-1;
-		};
-
-		document.getElementById('picid').src=picList[whichPic];
-	});
+        	timer.reset(12000);
+        }
+    });
+    
 
 
 
 
-};
+
