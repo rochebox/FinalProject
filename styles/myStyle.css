@@ -1,5 +1,10 @@
 
 
+@font-face {
+    font-family: "showFont";
+    src: url(../fonts/BulletSmallCapsScript.ttf);
+}
+
 
 body{
 	background-color: #1a1a1a;
@@ -14,16 +19,22 @@ button{
 h1{
 	padding: .3em;
 	background-color: #1a1a1a;
-	font-family: 'capture_itregular', 'Helvetica', 'Arial';
+	font-family: "showFont", "Helvetica", "Arial";
 	text-align: center;
-	font-size: 3em;
+	font-size: 5em;
 	color: lightblue;
 }
 
+.class{
+	float: left;
+}
+
+.title{
+	float: right;
+}
 
 
 .mySlides {
-
 	display:none;
 	padding: 1em;
 	margin: 1em;
