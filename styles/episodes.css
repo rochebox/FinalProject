@@ -1,4 +1,60 @@
 
-.band{
+@font-face {
+    font-family: "showFont";
+    src: url(../fonts/BulletSmallCapsScript.ttf);
+}
+
+body{
+	background-color: white;
+	text-align: center;
+
+}
+
+h1{
+	color: lightblue;
+	font-family: "showFont", "Helvetica", "Arial";
+}
+
+h3{
+	color: lightblue;
+	font-family: "showFont", "Helvetica", "Arial";
+}
+
+p{
+	color: lightblue;
+	background-color: white;
+}
+
+#band{
+	background-color: #1a1a1a;
+	width:100%;
+    height:450px;
+    border: 13px solid lightblue;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#band div{
+	background-color: #1a1a1a;
+	vertical-align: middle;
 	display: inline-block;
 }
+
+h1 h2{
+	background-color: #1a1a1a;
+	font-family: "showFont";
+}
+
+
+#band p{
+	background-color: #1a1a1a;
+	width:500px;
+    float:left;
+    white-space: normal;
+
+}
+
+
+
+
