@@ -41,19 +41,17 @@ h1{
 }
 
 #navbar{
-	position: static;
-	padding: 2em;
-	background-color: #1a1a1a;
-	color: white;
-
+	position: fixed;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	width: 1440px;
+	background-color: lightblue;
+	margin-bottom: 0;
+	color: #1a1a1a;
+	font-family: "showFont", "Helvetica", "Arial";
+	font-size: 3em;
 }
 
-
-
-.dropcontent1{
-	text-align: center;
-	position: absolute;
-}
 
 .inActive{
 	display: none;

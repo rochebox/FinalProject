@@ -1,102 +1,141 @@
 <DOCTYPE html>
 
 	<head>
-		<link rel="stylesheet" type="text/css" href="styles/cast.css">
+		<link rel="stylesheet" type="text/css" href="styles/episodes.css">
+
+
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 		<script type="text/javascript" src="javascript/episodes.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script>
+
+		$(document).ready(function(){
+
+			$("h3").hide();
+			$("p").hide();
+
+			$('#ep1').hover(function(){
+				$('#ep1n').toggle(500);
+				$('#ep1d').toggle(500);
+			});
+
+			$('#ep2').hover(function(){
+				$('#ep2n').toggle(500);
+				$('#ep2d').toggle(500);
+			});
+
+			$('#ep3').hover(function(){
+				$('#ep3n').toggle(500);
+				$('#ep3d').toggle(500);
+			});
+
+			$('#ep4').hover(function(){
+				$('#ep4n').toggle(500);
+				$('#ep4d').toggle(500);
+			});
+
+			$('#ep5').hover(function(){
+				$('#ep5n').toggle(500);
+				$('#ep5d').toggle(500);
+			});
+
+			$('#ep6').hover(function(){
+				$('#ep6n').toggle(500);
+				$('#ep6d').toggle(500);
+			});
+
+			$('#ep7').hover(function(){
+				$('#ep7n').toggle(500);
+				$('#ep7d').toggle(500);
+			});
+
+			$('#ep8').hover(function(){
+				$('#ep8n').toggle(500);
+				$('#ep8d').toggle(500);
+			});
+
+			$('#ep9').hover(function(){
+				$('#ep9n').toggle(500);
+				$('#ep9d').toggle(500);
+			});
+
+		});
+		</script>
+
 
 
 	</head>
 
 	<body>
-		<!---<div id="band">
-			<div id="ep1">
-				<img src="images/ep1.jpg">
-			</div>
 
-			<div id="ep2">
-				<img src="images/ep2.jpg">
-			</div>
-
-			<div id="ep3">
-				<img src="images/ep3.jpg">
-			</div>
-
-
-
-		</div>---->
-
-		<table border="1" style="width:100%">
-			<tr>
-				<td class="photos">
-					
-					</td>
-				<td class="about">
-					<h3>Episode 1
-					</h3>
-					<p></p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 2</h3>
-					<p>Frank is taken away from his family. The group gets taught what happens when they don’t comply. Things get a little explosive.
-</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 3</h3>
-					<p>Vivian's gaslight session forces her to relive some of her painful high school memories. Mateo, Vivian, Frank, Jo, Bonnie, Cassidy, and Jasen grow closer as they begin to settle into the routine. Frank gets to know his powers, causing a series of unfortunate events. 
-					</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 4</h3>
-					<p>Description</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 5</h3>
-					<p>Description</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 6</h3>
-					<p>Description</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 7</h3>
-					<p>Everybody returns from their trial outside when things get a little wild in the cafeteria. The group goes on a hunt for freedom.
-</p>
-				</td>
-			</tr>
-			<tr>
-				<td class="photos"></td>
-				<td class="about">
-					<h3>Episode 8</h3>
-					<p>The group faces the consequences of their attempted escape.
-</p>
-				</td>
-			</tr>
-
-		<div id="fullscreen">
-
+		<div>
+			<h1>Episodes</h1>
+			<h2>Season 1</h2>
 
 		</div>
+		<div id="band">
+			<div id="ep1" class="episodes">
+				<img src="images/ep1.jpg">
+				<h3 id="ep1n">Episode 1</h3>
+				<p id="ep1d">Underachieving high school teacher Mateo Mendoza is abducted by an unknown group. His deepest fears are uncovered.</p>
+			</div>
+			<div id="ep2"  class="episodes">
+				<img  src="images/ep2.jpg">
+				<h3 id="ep2n">Episode 2</h3>
+				<p id="ep2d">Frank is taken away from his family. The group gets taught what happens when they do not comply. Things get a little explosive.
+				</p>
+			</div>
+			<div id="ep3"  class="episodes">
+				<img src="images/ep3.jpg">
+				<h3 id="ep3n">Episode 3</h3>
+				<p id="ep3d">Vivian is forced her to relive some of her painful memories. Frank gets to know his powers, causing a series of unfortunate events. 
+				</p>
+			</div>
 
+			<div id="ep4"  class="episodes">
+				<img src="images/ep4.jpg">
+				<h3 id="ep4n">Episode 4</h3>
+				<p id="ep4d">The abductees join with a new member of the group, Jasen. Cassidy, Jo and Vivian's powers start shaping out. 
+				</p>
+			</div>
 
+			<div id="ep5"  class="episodes">
+				<img src="images/ep5.jpg">
+				<h3 id="ep5n">Episode 5</h3>
+				<p id="ep5d">Mateo and Vivian go out on their first test run, and Bonnie's lack of co-operation catches up to her. 
+				</p>
+			</div>
 
-	</body>
+			<div id="ep6">
+				<img src="images/ep6.jpg">
+				<h3 id="ep6n">Episode 6</h3>
+				<p id="ep6d">Jo's tragic past is haunts her, while Cassidy confronts her own. The Facility higher-ups hint onto upcoming plans.
+				</p>
+			</div>
+
+			<div id="ep7"  class="episodes">
+				<img src="images/ep7.jpg">
+				<h3 id="ep7n">Episode 7</h3>
+				<p id="ep7d">Distraught by their previous deeds and the future possibilites, the group decides to take action.
+				</p>
+			</div>
+
+			<div id="ep8"  class="episodes">
+				<img src="images/ep8.jpg">
+				<h3 id="ep8n">Episode 8</h3>
+				<p id="ep8d">The group faces the consequences of their attempted escape. New, even more terrifying method od gaslighting is introduced.
+				</p>
+			</div>
+
+			<div id="ep9"  class="episodes">
+				<img src="images/ep9.jpeg">
+				<h3 id="ep9n">Episode 9</h3>
+				<p id="ep9d">In the overwhelming finale of the first season, the characters are faced with real consequences of their gaslighting.
+				</p>
+			</div>
+
+			
+		</body>
 
